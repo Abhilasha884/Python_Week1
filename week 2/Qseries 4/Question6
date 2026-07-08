@@ -1,0 +1,7 @@
+import os
+
+with open("week 2/Qseries 4/Demo.txt","w") as file:
+    file.write("Hello world")
+
+os.rename("week 2/Qseries 4/Demo.txt","week 2/Qseries 4/Demo12.txt")
+print("File renamed")
