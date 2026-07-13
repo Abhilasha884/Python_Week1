@@ -18,28 +18,6 @@ def get_students():
 @app.get('/students/{student_id}')
 def get_student(student_id:int):
     for student in students:
-        if students.id==student_id:
-            return student
-    from fastapi import FastAPI
-from pydantic import BaseModel
-
-app=FastAPI()
-
-class user_fn(BaseModel):
-    id:int
-    name:str
-    age:int
-
-
-students=[]
-
-@app.get('/students')
-def get_students():
-    return students
-
-@app.get('/students/{student_id}')
-def get_student(student_id:int):
-    for student in students:
         if students['id']==student_id:
             return student
     raise HTTPException(
